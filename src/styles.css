@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/*Google fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    max-width: 30em;
+    margin: 4em auto;
+    position: relative;
+    background: #f4f4f4;
+    padding: 2em 3em;
+    overflow: hidden;
+}
+
+form h1 {
+    font-family: "Raleway";
+    color: #0000ff;
+    font-weight: bold;
+}
+
+form input[type=text]::placeholder {
+    font-family: "Raleway";
+    color: #0000ff;
+}
+
+form #todo:focus {
+    z-index: 0;
+    outline: none !important;
+    border-color: #0000ff;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+form .data {
+    margin-top: 1em;
+}
+
+form .data li {
+    list-style: none;
+    background: #fff;
+    width: 100%;
+    margin: 1em auto;
+    border-left: 4px solid #0000ff;
+    border-radius: 5px;
+    color: #666;
+    font-family: "Raleway";
+}
+
+form .data .list-group .list-group-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+form .data .list-group .list-group-item span {
+    width: 75%;
+    word-wrap: break-word;
+}
+
+.list-group-items-actions {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-group-items-actions #edit {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.list-group-items-actions #clear {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form .data li i {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #888;
+    cursor: pointer;
+}
+
+form .form-control {
+    height: 3em;
+    font-family: "Raleway";
+}
+
+form .form-control:focus {
+    box-shadow: 0;
+}
+
+#add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000ff;
+    position: absolute;
+    right: -12px;
+    top: -7px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#add i {
+    color: #f4f4f4;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}

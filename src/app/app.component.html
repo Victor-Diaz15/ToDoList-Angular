@@ -1,0 +1,25 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <h1 class="text-center">{{ title }}</h1>
+            <div class="input-group">
+                <input type="text" name="todo" id="todo" class="form-control" placeholder="Add To Do" [(ngModel)]="task" />
+                <button class="btn" id="add" (click)="addTask(task)">
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+        </div>
+        <div class="data">
+            <ul class="list-group">
+                <li class="list-group-item" #li *ngFor="let todo of tasks">
+                    <span> {{ todo }} </span>
+
+                    <div class="list-group-items-actions">
+                        <i (click)="editTask(todo)" id="edit" class="material-icons">edit</i>
+                        <i (click)="deleteTask(todo)" id="clear" class="material-icons">clear</i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>
