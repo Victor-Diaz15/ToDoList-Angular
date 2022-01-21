@@ -80,14 +80,14 @@ export class AppComponent {
   async editTask(todo: string) {
     //this de code of a modal from SweetAlert
     const { value: text } = await Swal.fire({
+      title: 'Edit Your Task',
       input: 'text',
-      inputLabel: 'Edit task: ' + todo,
-      inputPlaceholder: 'Type your task here...',
+      inputLabel: todo,
+      inputValue: todo,
       showCancelButton: true,
     });
     if (text) {
-      Swal.fire(text);
-
+      Swal.fire('Edited!', 'Your task has been edited.', 'success');
       for (let i = 0; i < this.tasks.length; i++) {
         if (todo === this.tasks[i]) {
           this.tasks[i] = text || todo;
