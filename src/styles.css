@@ -7,6 +7,8 @@
 body {
     margin: 0px;
     padding: 0px;
+    height: 100vh;
+    font-family: "Raleway";
 }
 
 .swal2-input-label {
@@ -24,7 +26,6 @@ form {
 }
 
 form h1 {
-    font-family: "Raleway";
     color: #0000ff;
     font-weight: bold;
 }
@@ -128,9 +129,20 @@ form .form-control:focus {
     text-align: center;
 }
 
+.space {
+    width: 100%;
+    height: 275px;
+}
+
 #footer {
     background-color: #0000ab;
+    margin-top: auto;
     padding-top: 20px;
+    min-height: 50px;
+}
+
+#paragraph {
+    font-size: 1.1rem;
 }
 
 #text {

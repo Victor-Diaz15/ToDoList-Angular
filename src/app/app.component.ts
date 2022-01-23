@@ -36,8 +36,13 @@ export class AppComponent {
       this.save();
       console.log(this.tasks);
     } else {
-      alert('Field required **');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Field required**!',
+      })
     }
+    
   }
 
   //this is the method for get the data in the localStorage

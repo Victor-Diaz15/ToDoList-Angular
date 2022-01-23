@@ -24,6 +24,7 @@
     </form>
 
 </div>
+<div class="space"></div>
 <!-- Footer -->
 <footer class="text-center text-white" id="footer">
     <!-- Grid container -->
@@ -33,7 +34,7 @@
             <div class="row d-flex justify-content-center">
                 <h2>To Do List App</h2>
                 <div class="col-lg-8">
-                    <p>
+                    <p id="paragraph">
                         This is a TodoList-App developed in Angular with Bootstrap for the desing and others libraries like SweetAlert, FontAwesome and Material Icons.
                         <br /> It is a single page application, which consists of creating a list of things to do, which you can edit or delete according to your needs. These tasks will remain saved in your browser even after a page reload or until they
                         are manually deleted.
@@ -42,16 +43,18 @@
             </div>
         </section>
         <!-- Section: Text -->
-        <h5 style="text-align: center;">Siguiendo estos links puede visitar mis redes sociales!!</h5>
-        <!-- Section: Social -->
-        <section class="text-center mb-5" id="socialIcon">
-            <a href="https://www.instagram.com/victordiaz15_/?hl=es-la" target="blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://github.com/Victor-Diaz15" target="blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </section>
+        <div #social>
+            <h5 style="text-align: center;">Siguiendo estos links puede visitar mis redes sociales!!</h5>
+            <!-- Section: Social -->
+            <section class="text-center mb-5" id="socialIcon">
+                <a href="https://www.instagram.com/victordiaz15_/?hl=es-la" target="blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Victor-Diaz15" target="blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+        </div>
         <!-- Section: Social -->
     </div>
     <!-- Grid container -->
